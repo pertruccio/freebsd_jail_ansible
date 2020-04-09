@@ -1,0 +1,4 @@
+- name: Install packages
+  pkgng:
+      name: ['nano','tmux','zsh','neofetch','coreutils','sudo','rust','zsh-syntax-highlighting','htop','bat']
+      state: present # not required. choices: present;latest;absent. State of the package.,Note: "latest" added in 2.7
