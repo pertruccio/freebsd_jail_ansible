@@ -36,7 +36,7 @@
 
 - name: templating ~/.zshrc
   template:
-    src: "~/.dotfiles/.zshrc_bsd"
+    src: "~/.dotfiles/.zshrc_bsd_jail"
     dest: "~/.zshrc"
     backup: yes 
 
