@@ -1,0 +1,6 @@
+- name: adding selfupdate crontab
+  ansible.builtin.cron:
+    name: "ansible pull"
+    minute: "0"
+    hour: "*"
+    job: "ansible-pull -U https://github.com/pertruccio/freebsd_jail_ansible -i inventory >/dev/null 2>&1"
